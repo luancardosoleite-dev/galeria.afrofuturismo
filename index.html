@@ -137,66 +137,67 @@
 
   <script>
     /* INÍCIO DO CÓDIGO JS (SCRIPT.JS) */
-    const videos = [
-      // video1.mp4: O Futuro é negro
-      { titulo: "O Futuro é negro", arquivo: "https://drive.google.com/uc?export=download&id=12dMHE1LSf8dwkYfyMZXGgvV9LhNH6k1d", thumb: "media/thumbs/capa1.jpg" },
-      // video2.mp4: Protagonista da própria história
-      { titulo: "Protagonista da própria história", arquivo: "https://drive.google.com/uc?export=download&id=154Ur7s_HHqq9oDm12n4Q0ESCTVMj45wC", thumb: "media/thumbs/capa2.jpg" },
-      // video3.mp4: Corpo e Cosmos
-      { titulo: "Corpo e Cosmos", arquivo: "https://drive.google.com/uc?export=download&id=1G-5xK4PDiqQHj-fgg15OzaHmpoz2IsA6", thumb: "media/thumbs/capa3.jpg" },
-      // video4.mp4: Representações do AFROFUTURISMO
-      { titulo: "Representações do AFROFUTURISMO", arquivo: "https://drive.google.com/uc?export=download&id=1H2QRPqm4ViP29F04e83xKTjkejUkVD-k", thumb: "media/thumbs/capa4.jpg" },
-      // video5.mp4: TV Brasil: O Afrofuturo.
-      { titulo: "TV Brasil: O Afrofuturo.", arquivo: "https://drive.google.com/uc?export=download&id=1HqPb1cjJFBMD_RHunjcujAJAEEBpnTux", thumb: "media/thumbs/capa5.jpg" },
-      // video6.mp4: Você não fala errado, você fala BANTU
-      { titulo: "Você não fala errado, você fala BANTU", arquivo: "https://drive.google.com/uc?export=download&id=1MQ19w8y0HNIct-jMp5_TNXZIAk5SCa1P", thumb: "media/thumbs/capa6.jpg" },
-      // video7.mp4: O amor me deu direto ( poesia )
-      { titulo: "O amor me deu direto ( poesia )", arquivo: "https://drive.google.com/uc?export=download&id=1YEmCKPqcpyBxnuLHVg2xIFylOtbU59MC", thumb: "media/thumbs/capa7.jpg" },
-      // video8.mp4: Se eu pudesse voltar ao passado (poesia)
-      { titulo: "Se eu pudesse voltar ao passado (poesia)", arquivo: "https://drive.google.com/uc?export=download&id=1dWCbJQiCIjUT8lj-0lY262VgtkQTlwBb", thumb: "media/thumbs/capa8.jpg" },
-      // video9.mp4: Vamos descolonizar cabeças?
-      { titulo: "Vamos descolonizar cabeças?", arquivo: "https://drive.google.com/uc?export=download&id=1i_Y4WiTtfyns1dBQZjg5PTQo-i2p0bZP", thumb: "media/thumbs/capa9.jpg" },
-      // video10.mp4: Queria poder reescrever a história ( poesia )
-      { titulo: "Queria poder reescrever a história ( poesia )", arquivo: "https://drive.google.com/uc?export=download&id=1mH33JzZjFaIMD8yZeBIqlR7CI2RxOrBK", thumb: "media/thumbs/capa10.jpg" },
-      // video11.mp4: O futuro que tentaram apagar
-      { titulo: "O futuro que tentaram apagar", arquivo: "https://drive.google.com/uc?export=download&id=1pq3py0upxOTQ5-3mAWl5xJe5f11l4M-N", thumb: "media/thumbs/capa11.jpg" }
-    ];
+const videos = [
+  // video1.mp4: O Futuro é negro
+  { titulo: "O Futuro é negro", arquivo: "https://drive.google.com/file/d/12dMHE1LSf8dwkYfyMZXGgvV9LhNH6k1d/preview", thumb: "media/thumbs/capa1.jpg" },
+  // video2.mp4: Protagonista da própria história
+  { titulo: "Protagonista da própria história", arquivo: "https://drive.google.com/file/d/154Ur7s_HHqq9oDm12n4Q0ESCTVMj45wC/preview", thumb: "media/thumbs/capa2.jpg" },
+  // video3.mp4: Corpo e Cosmos
+  { titulo: "Corpo e Cosmos", arquivo: "https://drive.google.com/file/d/1G-5xK4PDiqQHj-fgg15OzaHmpoz2IsA6/preview", thumb: "media/thumbs/capa3.jpg" },
+  // video4.mp4: Representações do AFROFUTURISMO
+  { titulo: "Representações do AFROFUTURISMO", arquivo: "https://drive.google.com/file/d/1H2QRPqm4ViP29F04e83xKTjkejUkVD-k/preview", thumb: "media/thumbs/capa4.jpg" },
+  // video5.mp4: TV Brasil: O Afrofuturo.
+  { titulo: "TV Brasil: O Afrofuturo.", arquivo: "https://drive.google.com/file/d/1HqPb1cjJFBMD_RHunjcujAJAEEBpnTux/preview", thumb: "media/thumbs/capa5.jpg" },
+  // video6.mp4: Você não fala errado, você fala BANTU
+  { titulo: "Você não fala errado, você fala BANTU", arquivo: "https://drive.google.com/file/d/1MQ19w8y0HNIct-jMp5_TNXZIAk5SCa1P/preview", thumb: "media/thumbs/capa6.jpg" },
+  // video7.mp4: O amor me deu direto ( poesia )
+  { titulo: "O amor me deu direto ( poesia )", arquivo: "https://drive.google.com/file/d/1YEmCKPqcpyBxnuLHVg2xIFylOtbU59MC/preview", thumb: "media/thumbs/capa7.jpg" },
+  // video8.mp4: Se eu pudesse voltar ao passado (poesia)
+  { titulo: "Se eu pudesse voltar ao passado (poesia)", arquivo: "https://drive.google.com/file/d/1dWCbJQiCIjUT8lj-0lY262VgtkQTlwBb/preview", thumb: "media/thumbs/capa8.jpg" },
+  // video9.mp4: Vamos descolonizar cabeças?
+  { titulo: "Vamos descolonizar cabeças?", arquivo: "https://drive.google.com/file/d/1i_Y4WiTtfyns1dBQZjg5PTQo-i2p0bZP/preview", thumb: "media/thumbs/capa9.jpg" },
+  // video10.mp4: Queria poder reescrever a história ( poesia )
+  { titulo: "Queria poder reescrever a história ( poesia )", arquivo: "https://drive.google.com/file/d/1mH33JzZjFaIMD8yZeBIqlR7CI2RxOrBK/preview", thumb: "media/thumbs/capa10.jpg" },
+  // video11.mp4: O futuro que tentaram apagar
+  { titulo: "O futuro que tentaram apagar", arquivo: "https://drive.google.com/file/d/1pq3py0upxOTQ5-3mAWl5xJe5f11l4M-N/preview", thumb: "media/thumbs/capa11.jpg" }
+];
 
-    const galeria = document.getElementById("galeria");
-    const modal = document.getElementById("modal");
-    const videoPlayer = document.getElementById("videoPlayer");
-    const videoTitulo = document.getElementById("videoTitulo");
-    const fechar = document.getElementById("fechar");
+const galeria = document.getElementById("galeria");
+const modal = document.getElementById("modal");
+const videoPlayer = document.getElementById("videoPlayer");
+const videoTitulo = document.getElementById("videoTitulo");
+const fechar = document.getElementById("fechar");
 
-    videos.forEach(v => {
-      const card = document.createElement("div");
-      card.classList.add("card");
-      card.innerHTML = `
-        <img src="${v.thumb}" alt="${v.titulo}">
-        <h3>${v.titulo}</h3>
-      `;
-      card.onclick = () => {
-        modal.style.display = "flex";
-        videoPlayer.src = v.arquivo;
-        videoTitulo.textContent = v.titulo;
-        videoPlayer.play();
-      };
-      galeria.appendChild(card);
-    });
+videos.forEach(v => {
+  const card = document.createElement("div");
+  card.classList.add("card");
+  card.innerHTML = `
+    <img src="${v.thumb}" alt="${v.titulo}">
+    <h3>${v.titulo}</h3>
+  `;
+  card.onclick = () => {
+    modal.style.display = "flex";
+    videoPlayer.src = v.arquivo;
+    videoTitulo.textContent = v.titulo;
+    videoPlayer.play();
+  };
+  galeria.appendChild(card);
+});
 
-    fechar.onclick = () => {
-      modal.style.display = "none";
-      videoPlayer.pause();
-      videoPlayer.src = "";
-    };
+fechar.onclick = () => {
+  modal.style.display = "none";
+  videoPlayer.pause();
+  videoPlayer.src = "";
+};
 
-    window.onclick = e => {
-      if (e.target === modal) {
-        modal.style.display = "none";
-        videoPlayer.pause();
-      }
-    };
-    /* FIM DO CÓDIGO JS (SCRIPT.JS) */
+window.onclick = e => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+    videoPlayer.pause();
+  }
+};
+/* FIM DO CÓDIGO JS (SCRIPT.JS) */
   </script>
 </body>
 </html>
+
